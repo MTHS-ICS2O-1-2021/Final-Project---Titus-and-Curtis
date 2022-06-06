@@ -8,7 +8,7 @@ on: [push, pull_request]
 
 jobs:
   run-linters:
-    name: GitHub's Super Linter
+    name: Mr Coxall's Super Linter
     runs-on: ubuntu-latest
 
     steps:
