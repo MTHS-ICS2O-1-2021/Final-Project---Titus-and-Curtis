@@ -3,7 +3,7 @@
 ###############################################
 
 ---
-name: GitHub's Super Linter
+name: Mr Coxall's Super Linter
 on: [push, pull_request]
 
 jobs:
