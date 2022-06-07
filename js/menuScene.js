@@ -6,7 +6,7 @@
 /**
  * This class is the Splash Scene.
  */
- class MenuScene extends Phaser.Scene {
+  class MenuScene extends Phaser.Scene {
   /**
    * This method is the construtor.
    */
@@ -25,19 +25,19 @@
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-      this.cameras.main.setBackgroundColor("#ffffff")
+    this.cameras.main.setBackgroundColor("#ffffff")
   }
 
   /**
    * Can be defined on your own Scenes.
    * Use it to load assets.
    */
- preload() {
-   console.log("Menu Scene")
-   this.load.image("menuSceneBackground", "assets/game_backdrop.png")
-   this.load.image("startButtonNormal", "assets/normal_start_button.png")
-   this.load.image("startButtonHard", "assets/hard_start_button.png")
- }
+  preload() {
+    console.log("Menu Scene")
+    this.load.image("menuSceneBackground", "assets/game_backdrop.png")
+    this.load.image("startButtonNormal", "assets/normal_start_button.png")
+    this.load.image("startButtonHard", "assets/hard_start_button.png")
+   }
 
   /**
    * Can be defined on your own Scenes.
