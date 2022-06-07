@@ -83,7 +83,7 @@
              this.controlsSceneTextStyle
           )
 
-    clickButton () {
+    clickButton (); {
      this.scene.start("menuScene")
     }
   }
