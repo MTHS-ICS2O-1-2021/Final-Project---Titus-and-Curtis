@@ -22,7 +22,7 @@ class ControlsScene extends Phaser.Scene {
       font: "60px Times",
       fill: "#ffffff",
       align: "center",
-    };
+    }
 
     /**
      * Can be defined on your own Scenes.
