@@ -14,7 +14,7 @@ class ControlsScene extends Phaser.Scene {
   constructor() {
     super({ key: "controlsScene" })
 
-    this.controlsSceneBackgroundImage = null;
+    this.controlsSceneBackgroundImage = null
     this.okButton = null
     this.controls = null
     this.controlsSceneText = null
@@ -88,4 +88,4 @@ class ControlsScene extends Phaser.Scene {
   }
 }
 
-export default ControlsScene;
+export default ControlsScene
