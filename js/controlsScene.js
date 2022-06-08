@@ -63,9 +63,9 @@ class ControlsScene extends Phaser.Scene {
       0,
       0,
       "controlsSceneBackground"
-    );
-    this.controlsSceneBackgroundImage.x = 1080 / 2;
-    this.controlsSceneBackgroundImage.y = 1080 / 2;
+    )
+    this.controlsSceneBackgroundImage.x = 1080 / 2
+    this.controlsSceneBackgroundImage.y = 1080 / 2
 
     this.okButton = this.add.sprite(1080 / 2, 1620 / 2 + 100, "okbutton")
     this.okButton.setInteractive({ useHandCursor: true })
@@ -73,14 +73,14 @@ class ControlsScene extends Phaser.Scene {
 
     this.controls = this.add
       .sprite(1080 / 2, 440 / 2 + 100, "controls")
-      .setScale(1.5);
+      .setScale(1.5)
 
     this.controlsSceneText = this.add.text(
       1080 / 2,
       1280 / 2,
       "Use arrow keys or WASD to move",
       this.controlsSceneTextStyle
-    );
+    )
     clickButton()
     {
       this.scene.start("menuScene")
