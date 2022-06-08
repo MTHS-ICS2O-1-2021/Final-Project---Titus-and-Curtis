@@ -4,12 +4,12 @@
 // Created on: June 2022
 // This is the Phaser3 configuration file
 
-import ControlsScene from "./controlsScene.js";
-import MenuScene from "./menuScene.js";
+import ControlsScene from "./controlsScene.js"
+import MenuScene from "./menuScene.js"
 
 // Our game scenes
-const controlsScene = new ControlsScene();
-const menuScene = new MenuScene();
+const controlsScene = new ControlsScene()
+const menuScene = new MenuScene()
 
 /** Game scene.*/
 const config = {
@@ -31,13 +31,13 @@ const config = {
   },
 };
 
-const game = new Phaser.Game(config);
-console.log(game);
+const game = new Phaser.Game(config)
+console.log(game)
 
 // load scenes
 // Note: remember any "key" is global and CAN NOT be reused!
-game.scene.add("controlsScene", controlsScene);
-game.scene.add("menuScene", menuScene);
+game.scene.add("controlsScene", controlsScene)
+game.scene.add("menuScene", menuScene)
 
 // the start scene
-game.scene.start("controlsScene");
+game.scene.start("controlsScene")

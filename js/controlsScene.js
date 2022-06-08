@@ -12,12 +12,12 @@ class ControlsScene extends Phaser.Scene {
    * This method is the construtor.
    */
   constructor() {
-    super({ key: "controlsScene" });
+    super({ key: "controlsScene" })
 
     this.controlsSceneBackgroundImage = null;
-    this.okButton = null;
-    this.controls = null;
-    this.controlsSceneText = null;
+    this.okButton = null
+    this.controls = null
+    this.controlsSceneText = null
     this.controlsSceneTextStyle = {
       font: "60px Times",
       fill: "#ffffff",
@@ -39,7 +39,7 @@ class ControlsScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("#ffffff");
+    this.cameras.main.setBackgroundColor("#ffffff")
   }
 
   /**
@@ -47,10 +47,10 @@ class ControlsScene extends Phaser.Scene {
    * Use it to load assets.
    */
   preload() {
-    console.log("Controls Scene");
-    this.load.image("controlsSceneBackground", "./assets/game_backdrop.png");
-    this.load.image("okbutton", "./assets/ok_button.png");
-    this.load.image("controls", "./assets/controls.gif");
+    console.log("Controls Scene")
+    this.load.image("controlsSceneBackground", "./assets/game_backdrop.png")
+    this.load.image("okbutton", "./assets/ok_button.png")
+    this.load.image("controls", "./assets/controls.gif")
   }
 
   /**
@@ -67,9 +67,9 @@ class ControlsScene extends Phaser.Scene {
     this.controlsSceneBackgroundImage.x = 1080 / 2;
     this.controlsSceneBackgroundImage.y = 1080 / 2;
 
-    this.okButton = this.add.sprite(1080 / 2, 1620 / 2 + 100, "okbutton");
-    this.okButton.setInteractive({ useHandCursor: true });
-    this.okButton.on("pointerdown", () => this.clickButton());
+    this.okButton = this.add.sprite(1080 / 2, 1620 / 2 + 100, "okbutton")
+    this.okButton.setInteractive({ useHandCursor: true })
+    this.okButton.on("pointerdown", () => this.clickButton())
 
     this.controls = this.add
       .sprite(1080 / 2, 440 / 2 + 100, "controls")
@@ -81,9 +81,9 @@ class ControlsScene extends Phaser.Scene {
       "Use arrow keys or WASD to move",
       this.controlsSceneTextStyle
     );
-    clickButton();
+    clickButton()
     {
-      this.scene.start("menuScene");
+      this.scene.start("menuScene")
     }
   }
 }
