@@ -98,10 +98,10 @@ class GameSceneHard extends Phaser.Scene {
         this.monkeyHard.x += 10
       }
       if (
-        this.monkeyHard.y < 250 ||
-        this.monkeyHard.y > 820 ||
-        (this.monkeyHard.y > 290 && this.monkeyHard.y < 530) ||
-        (this.monkeyHard.y < 780 && this.monkeyHard.y > 550)
+        this.monkeyHard.y < 251 ||
+        this.monkeyHard.y > 821 ||
+        (this.monkeyHard.y > 291 && this.monkeyHard.y < 531) ||
+        (this.monkeyHard.y < 781 && this.monkeyHard.y > 551)
       ) {
         this.monkeyHard.x += 10
       }
@@ -128,10 +128,10 @@ class GameSceneHard extends Phaser.Scene {
         this.monkeyHard.x -= 10
       }
       if (
-        this.monkeyHard.y < 250 ||
-        this.monkeyHard.y > 820 ||
-        (this.monkeyHard.y > 290 && this.monkeyHard.y < 530) ||
-        (this.monkeyHard.y < 780 && this.monkeyHard.y > 550)
+        this.monkeyHard.y < 251 ||
+        this.monkeyHard.y > 821 ||
+        (this.monkeyHard.y > 291 && this.monkeyHard.y < 531) ||
+        (this.monkeyHard.y < 781 && this.monkeyHard.y > 551)
       ) {
         this.monkeyHard.x -= 10
       }
