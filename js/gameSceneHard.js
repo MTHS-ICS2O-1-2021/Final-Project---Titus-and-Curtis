@@ -59,6 +59,12 @@ class GameSceneHard extends Phaser.Scene {
       .setScale(0.35)
   }
 
+  /**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   update(time, delta) {
     //called 60 times a second.
 
