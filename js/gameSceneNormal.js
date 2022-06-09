@@ -10,7 +10,7 @@
   
     // create an normalCar
   createNormalCar () {
-    consts normalCarXLocation = Math.floor(Math.random() * 1079) + 1 //spawns the normalCar between 1 and 1921 pixel
+    const normalCarXLocation = Math.floor(Math.random() * 1079) + 1 //spawns the normalCar between 1 and 1921 pixel
     let normalCarXVelocity = Math.floor(Math.random() * 50) + 1 // random speed of the normalCar
     normalCarXVelocity *= Math.round(Math.random()) ? 1 : -1
     const anNormalCar = this.physics.add.sprite(normalCarXLocation, -100, "normalCar")
