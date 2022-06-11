@@ -6,10 +6,306 @@
 /**
  * This class is the Splash Scene.
  */
+
 class GameSceneHard extends Phaser.Scene {
-  /**
-   * This method is the construtor.
-   */
+  // create an HardCar
+
+  // cars that spawn on the top lane
+  createHardCar1() {
+    var carHardSpeed = 300
+    var carPosition = Math.floor(Math.random() * 12) + 1
+
+    if (carPosition == 1) {
+      const anHardCar = this.physics.add
+        .sprite(270, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 2) {
+      const anHardCar = this.physics.add
+        .sprite(540, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 3) {
+      const anHardCar = this.physics.add
+        .sprite(800, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the right lane
+    if (carPosition == 4) {
+      const anHardCar = this.physics.add
+        .sprite(980, 270, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 5) {
+      const anHardCar = this.physics.add
+        .sprite(980, 540, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 6) {
+      const anHardCar = this.physics.add
+        .sprite(980, 800, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the bottom lane
+    if (carPosition == 7) {
+      const anHardCar = this.physics.add
+        .sprite(800, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 8) {
+      const anHardCar = this.physics.add
+        .sprite(540, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 9) {
+      const anHardCar = this.physics.add
+        .sprite(270, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the left lane
+    if (carPosition == 10) {
+      const anHardCar = this.physics.add
+        .sprite(100, 800, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 11) {
+      const anHardCar = this.physics.add
+        .sprite(100, 540, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 12) {
+      const anHardCar = this.physics.add
+        .sprite(100, 270, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+  }
+  createHardCar2() {
+    var carHardSpeed = 400
+    var carPosition = Math.floor(Math.random() * 12) + 1
+
+    if (carPosition == 1) {
+      const anHardCar = this.physics.add
+        .sprite(270, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 2) {
+      const anHardCar = this.physics.add
+        .sprite(540, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 3) {
+      const anHardCar = this.physics.add
+        .sprite(800, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the right lane
+    if (carPosition == 4) {
+      const anHardCar = this.physics.add
+        .sprite(980, 270, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 5) {
+      const anHardCar = this.physics.add
+        .sprite(980, 540, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 6) {
+      const anHardCar = this.physics.add
+        .sprite(980, 800, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the bottom lane
+    if (carPosition == 7) {
+      const anHardCar = this.physics.add
+        .sprite(800, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 8) {
+      const anHardCar = this.physics.add
+        .sprite(540, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 9) {
+      const anHardCar = this.physics.add
+        .sprite(270, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the left lane
+    if (carPosition == 10) {
+      const anHardCar = this.physics.add
+        .sprite(100, 800, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 11) {
+      const anHardCar = this.physics.add
+        .sprite(100, 540, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 12) {
+      const anHardCar = this.physics.add
+        .sprite(100, 270, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+  }
+  createHardCar3() {
+    var carHardSpeed = 500
+    var carPosition = Math.floor(Math.random() * 12) + 1
+
+    if (carPosition == 1) {
+      const anHardCar = this.physics.add
+        .sprite(270, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 2) {
+      const anHardCar = this.physics.add
+        .sprite(540, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 3) {
+      const anHardCar = this.physics.add
+        .sprite(800, 100, "hardCar")
+        .setScale(0.6)
+      anHardCar.body.velocity.y = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the right lane
+    if (carPosition == 4) {
+      const anHardCar = this.physics.add
+        .sprite(980, 270, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 5) {
+      const anHardCar = this.physics.add
+        .sprite(980, 540, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 6) {
+      const anHardCar = this.physics.add
+        .sprite(980, 800, "hardCarSide")
+        .setScale(0.6)
+      anHardCar.body.velocity.x = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the bottom lane
+    if (carPosition == 7) {
+      const anHardCar = this.physics.add
+        .sprite(800, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 8) {
+      const anHardCar = this.physics.add
+        .sprite(540, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 9) {
+      const anHardCar = this.physics.add
+        .sprite(270, 980, "hardCar")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.y = -carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    // cars that spawn on the left lane
+    if (carPosition == 10) {
+      const anHardCar = this.physics.add
+        .sprite(100, 800, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 11) {
+      const anHardCar = this.physics.add
+        .sprite(100, 540, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+    if (carPosition == 12) {
+      const anHardCar = this.physics.add
+        .sprite(100, 270, "hardCarSide")
+        .setScale(0.6)
+        .setAngle(180)
+      anHardCar.body.velocity.x = carHardSpeed
+      this.hardCarGroup.add(anHardCar)
+    }
+  }
+
   constructor() {
     super({ key: "gameSceneHard" })
 
@@ -33,11 +329,18 @@ class GameSceneHard extends Phaser.Scene {
    */
   preload() {
     console.log("Game Scene Hard")
+    //images
     this.load.image(
       "gameSceneHardBackground",
       "./assets/hard_game_backdrop.png"
     )
     this.load.image("monkey", "./assets/monkey.gif")
+    this.load.image("hardCar", "./assets/hard_car.png")
+    this.load.image("hardCarSide", "./assets/hard_car_side.png")
+    this.load.image("borderVertical", "./assets/border_vertical.png")
+    this.load.image("borderHorizontal", "./assets/border_horizontal.png")
+    //sounds
+    this.load.audio("carCrash", "./assets/carCrash.wav")
   }
 
   /**
@@ -56,15 +359,112 @@ class GameSceneHard extends Phaser.Scene {
 
     this.monkeyHard = this.physics.add
       .sprite(1080 / 2, 1080 / 2, "monkey")
-      .setScale(0.35)
+      .setScale(0.27)
+    this.borderRight = this.physics.add
+      .sprite(1060, 540, "borderVertical")
+      .setImmovable()
+    this.borderBottom = this.physics.add
+      .sprite(540, 1060, "borderHorizontal")
+      .setImmovable()
+    this.borderLeft = this.physics.add
+      .sprite(20, 540, "borderVertical")
+      .setImmovable()
+    this.borderTop = this.physics.add
+      .sprite(540, 20, "borderHorizontal")
+      .setImmovable()
+
+    // create a group for the cars
+    this.hardCarGroup = this.add.group()
+    this.createHardCar1()
+    this.createHardCar2()
+    this.createHardCar3()
+    // Collisions between car and the player
+    this.physics.add.collider(
+      this.monkeyHard,
+      this.hardCarGroup,
+      function (monkeyHardCollide, hardCarCollide) {
+        monkeyHardCollide.destroy()
+        this.sound.play("carCrash")
+      }.bind(this)
+    )
+
+    // Collisions between car and the top border
+    this.physics.add.collider(
+      this.hardCarGroup,
+      this.borderTop,
+      function (hardCarCollide, borderCollide) {
+        hardCarCollide.destroy()
+        var randomNumber = Math.floor(Math.random() * 3) + 1
+        if (randomNumber == 1) {
+          this.createHardCar1()
+        }
+        if (randomNumber == 2) {
+          this.createHardCar2()
+        }
+        if (randomNumber == 3) {
+          this.createHardCar3()
+        }
+      }.bind(this)
+    )
+
+    // Collisions between car and the right border
+    this.physics.add.collider(
+      this.hardCarGroup,
+      this.borderRight,
+      function (hardCarCollide, borderCollide) {
+        hardCarCollide.destroy()
+        var randomNumber = Math.floor(Math.random() * 3) + 1
+        if (randomNumber == 1) {
+          this.createHardCar1()
+        }
+        if (randomNumber == 2) {
+          this.createHardCar2()
+        }
+        if (randomNumber == 3) {
+          this.createHardCar3()
+        }
+      }.bind(this)
+    )
+
+    // Collisions between car and the bottom border
+    this.physics.add.collider(
+      this.hardCarGroup,
+      this.borderBottom,
+      function (hardCarCollide, borderCollide) {
+        hardCarCollide.destroy()
+        var randomNumber = Math.floor(Math.random() * 3) + 1
+        if (randomNumber == 1) {
+          this.createHardCar1()
+        }
+        if (randomNumber == 2) {
+          this.createHardCar2()
+        }
+        if (randomNumber == 3) {
+          this.createHardCar3()
+        }
+      }.bind(this)
+    )
+
+    // Collisions between car and the left border
+    this.physics.add.collider(
+      this.hardCarGroup,
+      this.borderLeft,
+      function (hardCarCollide, borderCollide) {
+        hardCarCollide.destroy()
+        var randomNumber = Math.floor(Math.random() * 3) + 1
+        if (randomNumber == 1) {
+          this.createHardCar1()
+        }
+        if (randomNumber == 2) {
+          this.createHardCar2()
+        }
+        if (randomNumber == 3) {
+          this.createHardCar3()
+        }
+      }.bind(this)
+    )
   }
 
-  /**
-   * Can be defined on your own Scenes.
-   * This method is called by the Scene Manager when the scene starts,
-   *   before preload() and create().
-   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
-   */
   update(time, delta) {
     //called 60 times a second.
 
@@ -76,6 +476,9 @@ class GameSceneHard extends Phaser.Scene {
     const keyLeftObjAlt = this.input.keyboard.addKey("LEFT")
     const keyBackwardObjAlt = this.input.keyboard.addKey("DOWN")
     const keyRightObjAlt = this.input.keyboard.addKey("RIGHT")
+    const testKey = this.input.keyboard.addKey("SPACE")
+
+    // player movement
 
     if (keyForwardObj.isDown || keyForwardObjAlt.isDown) {
       this.monkeyHard.y -= 10
@@ -85,8 +488,8 @@ class GameSceneHard extends Phaser.Scene {
       if (
         this.monkeyHard.x < 250 ||
         this.monkeyHard.x > 820 ||
-        (this.monkeyHard.x > 290 && this.monkeyHard.x < 530) ||
-        (this.monkeyHard.x < 780 && this.monkeyHard.x > 550)
+        (this.monkeyHard.x > 290 && this.monkeyHard.x < 520) ||
+        (this.monkeyHard.x < 780 && this.monkeyHard.x > 560)
       ) {
         this.monkeyHard.y += 10
       }
@@ -98,10 +501,10 @@ class GameSceneHard extends Phaser.Scene {
         this.monkeyHard.x += 10
       }
       if (
-        this.monkeyHard.y < 251 ||
-        this.monkeyHard.y > 821 ||
-        (this.monkeyHard.y > 291 && this.monkeyHard.y < 531) ||
-        (this.monkeyHard.y < 781 && this.monkeyHard.y > 551)
+        this.monkeyHard.y < 250 ||
+        this.monkeyHard.y > 820 ||
+        (this.monkeyHard.y > 290 && this.monkeyHard.y < 520) ||
+        (this.monkeyHard.y < 780 && this.monkeyHard.y > 560)
       ) {
         this.monkeyHard.x += 10
       }
@@ -115,8 +518,8 @@ class GameSceneHard extends Phaser.Scene {
       if (
         this.monkeyHard.x < 250 ||
         this.monkeyHard.x > 820 ||
-        (this.monkeyHard.x > 290 && this.monkeyHard.x < 530) ||
-        (this.monkeyHard.x < 780 && this.monkeyHard.x > 550)
+        (this.monkeyHard.x > 290 && this.monkeyHard.x < 520) ||
+        (this.monkeyHard.x < 780 && this.monkeyHard.x > 560)
       ) {
         this.monkeyHard.y -= 10
       }
@@ -128,10 +531,10 @@ class GameSceneHard extends Phaser.Scene {
         this.monkeyHard.x -= 10
       }
       if (
-        this.monkeyHard.y < 251 ||
-        this.monkeyHard.y > 821 ||
-        (this.monkeyHard.y > 291 && this.monkeyHard.y < 531) ||
-        (this.monkeyHard.y < 781 && this.monkeyHard.y > 551)
+        this.monkeyHard.y < 250 ||
+        this.monkeyHard.y > 820 ||
+        (this.monkeyHard.y > 290 && this.monkeyHard.y < 520) ||
+        (this.monkeyHard.y < 780 && this.monkeyHard.y > 560)
       ) {
         this.monkeyHard.x -= 10
       }
