@@ -3,18 +3,14 @@
 // Created by: Curtis Edwards & Titus Diceman
 // Created on: June 2022
 // This is the Phaser3 configuration file
-/**
- * This class is the Splash Scene.
- */
 
 class GameSceneHard extends Phaser.Scene {
   // create an HardCar
 
-  // cars that spawn on the top lane
   createHardCar1() {
     var carHardSpeed = 300
     var carPosition = Math.floor(Math.random() * 12) + 1
-
+    // cars that spawn on the top lane
     if (carPosition == 1) {
       const anHardCar = this.physics.add
         .sprite(270, 100, "hardCar")
@@ -112,7 +108,7 @@ class GameSceneHard extends Phaser.Scene {
   createHardCar2() {
     var carHardSpeed = 400
     var carPosition = Math.floor(Math.random() * 12) + 1
-
+    // cars that spawn on the top lane
     if (carPosition == 1) {
       const anHardCar = this.physics.add
         .sprite(270, 100, "hardCar")
@@ -210,6 +206,7 @@ class GameSceneHard extends Phaser.Scene {
   createHardCar3() {
     var carHardSpeed = 500
     var carPosition = Math.floor(Math.random() * 12) + 1
+    // cars that spawn on the top lane
 
     if (carPosition == 1) {
       const anHardCar = this.physics.add
