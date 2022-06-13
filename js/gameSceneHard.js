@@ -114,7 +114,7 @@ class GameSceneHard extends Phaser.Scene {
     }
   }
 
-    /**
+  /**
    * Can be defined on your own Scenes.
    * This method is called by the Scene Manager when the scene starts,
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
