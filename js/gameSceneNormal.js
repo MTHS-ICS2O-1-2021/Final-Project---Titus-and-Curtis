@@ -170,7 +170,11 @@ class GameSceneNormal extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.gameSceneNormalBackgroundImage = this.add.sprite(0, 0, "gameSceneNormalBackground")
+    this.gameSceneNormalBackgroundImage = this.add.sprite(
+      0,
+      0,
+      "gameSceneNormalBackground"
+    )
     this.gameSceneNormalBackgroundImage.x = 1080 / 2
     this.gameSceneNormalBackgroundImage.y = 1080 / 2
 
