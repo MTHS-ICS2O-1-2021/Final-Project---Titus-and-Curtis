@@ -59,7 +59,10 @@ class ControlsScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.controlsSceneBackgroundImage = this.add.sprite(0, 0, "controlsSceneBackground")
+    this.controlsSceneBackgroundImage = this.add.sprite(
+      0, 
+      0, 
+      "controlsSceneBackground")
     this.controlsSceneBackgroundImage.x = 1080 / 2
     this.controlsSceneBackgroundImage.y = 1080 / 2
 
