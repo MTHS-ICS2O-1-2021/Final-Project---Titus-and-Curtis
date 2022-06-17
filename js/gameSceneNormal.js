@@ -11,7 +11,7 @@ class GameSceneNormal extends Phaser.Scene {
 
   // THIS CODE WONT WORK RIGHT NOW
 
-/**
+    /**
    * Can be defined on your own Scenes.
    * This method is called by the Scene Manager when the scene starts,
    *   before preload() and create().
