@@ -171,8 +171,8 @@ class GameSceneNormal extends Phaser.Scene {
    */
   create(data) {
     this.gameSceneNormalBackgroundImage = this.add.sprite(
-      0, 
-      0, 
+      0,
+      0,
       "gameSceneNormalBackground"
     )
     this.gameSceneNormalBackgroundImage.x = 1080 / 2
