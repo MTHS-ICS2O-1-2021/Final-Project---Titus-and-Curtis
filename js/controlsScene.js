@@ -62,7 +62,8 @@ class ControlsScene extends Phaser.Scene {
     this.controlsSceneBackgroundImage = this.add.sprite(
       0, 
       0, 
-      "controlsSceneBackground")
+      "controlsSceneBackground"
+      )
     this.controlsSceneBackgroundImage.x = 1080 / 2
     this.controlsSceneBackgroundImage.y = 1080 / 2
 
