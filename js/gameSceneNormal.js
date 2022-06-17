@@ -11,7 +11,12 @@ class GameSceneNormal extends Phaser.Scene {
 
   // THIS CODE WONT WORK RIGHT NOW
 
-  // cars that spawn on the top lane
+/**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   createNormalCar() {
     var carNormalSpeed = Math.floor(Math.random() * 300) + 200
     var carPosition = Math.floor(Math.random() * 12) + 1
@@ -253,7 +258,12 @@ class GameSceneNormal extends Phaser.Scene {
       }.bind(this)
     )
   }
-
+  /**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   update(time, delta) {
     //called 60 times a second.
 
@@ -326,6 +336,12 @@ class GameSceneNormal extends Phaser.Scene {
       }
     }
   }
+  /**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   clickButton() {
     this.scene.start("menuScene")
   }
