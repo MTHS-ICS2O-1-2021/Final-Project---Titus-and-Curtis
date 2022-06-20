@@ -87,7 +87,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 11) {
         const anNormalCar = this.physics.add
           .sprite(916, 1110, "normalCar")
-
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -95,7 +94,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 12) {
         const anNormalCar = this.physics.add
           .sprite(728, 1110, "normalCar")
-
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -103,7 +101,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 13) {
         const anNormalCar = this.physics.add
           .sprite(540, 1110, "normalCar")
-
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -111,7 +108,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 14) {
         const anNormalCar = this.physics.add
           .sprite(352, 1110, "normalCar")
-
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -119,7 +115,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 15) {
         const anNormalCar = this.physics.add
           .sprite(164, 1110, "normalCar")
-
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -128,7 +123,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 16) {
         const anNormalCar = this.physics.add
           .sprite(-30, 916, "normalCarSide")
-
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -136,7 +130,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 17) {
         const anNormalCar = this.physics.add
           .sprite(-30, 728, "normalCarSide")
-
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -144,7 +137,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 18) {
         const anNormalCar = this.physics.add
           .sprite(-30, 540, "normalCarSide")
-
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -152,7 +144,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 19) {
         const anNormalCar = this.physics.add
           .sprite(-30, 352, "normalCarSide")
-
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -160,7 +151,6 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 20) {
         const anNormalCar = this.physics.add
           .sprite(-30, 164, "normalCarSide")
-
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
