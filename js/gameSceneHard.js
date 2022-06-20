@@ -219,7 +219,6 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 11) {
         const anGoldCar = this.physics.add
           .sprite(916, 1110, "goldCar")
-
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -228,14 +227,13 @@ class GameSceneHard extends Phaser.Scene {
         const anGoldCar = this.physics.add
           .sprite(728, 1110, "goldCar")
 
-          .setAngle(180)
+          .setAgle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 13) {
         const anGoldCar = this.physics.add
           .sprite(540, 1110, "goldCar")
-
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -243,7 +241,6 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 14) {
         const anGoldCar = this.physics.add
           .sprite(352, 1110, "goldCar")
-
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -251,7 +248,6 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 15) {
         const anGoldCar = this.physics.add
           .sprite(164, 1110, "goldCar")
-
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -260,15 +256,13 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 16) {
         const anGoldCar = this.physics.add
           .sprite(-30, 916, "goldCarSide")
-
           .setAngle(180)
         (anGoldCar.body.velocity.x = carHardSpeed),
-          this.goldCarGroup.add(anGoldCar)
+        this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 17) {
         const anGoldCar = this.physics.add
           .sprite(-30, 728, "goldCarSide")
-
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -276,7 +270,6 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 18) {
         const anGoldCar = this.physics.add
           .sprite(-30, 540, "goldCarSide")
-
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -284,7 +277,6 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 19) {
         const anGoldCar = this.physics.add
           .sprite(-30, 352, "goldCarSide")
-
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -292,7 +284,6 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 20) {
         const anGoldCar = this.physics.add
           .sprite(-30, 164, "goldCarSide")
-
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
