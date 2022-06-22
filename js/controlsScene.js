@@ -87,7 +87,12 @@ class ControlsScene extends Phaser.Scene {
       )
       .setOrigin(0.5)
   }
-
+  /**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   clickButton() {
     this.scene.start("menuScene")
   }

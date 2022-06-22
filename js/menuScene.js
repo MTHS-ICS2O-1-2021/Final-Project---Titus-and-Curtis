@@ -89,10 +89,21 @@ class MenuScene extends Phaser.Scene {
     })
     this.startButtonHard.on("pointerdown", () => this.clickButtonHard())
   }
-
+  /**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   clickButtonNoraml() {
     this.scene.start("gameSceneNormal")
   }
+    /**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   clickButtonHard() {
     this.scene.start("gameSceneHard")
   }
