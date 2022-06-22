@@ -2,19 +2,19 @@
 
 // Created by: Curtis Edwards
 // Created on: May 2022
-// This is the Splash Scene
+// This is the Title Scene
 
 /**
- * This class is the Splash Scene.
+ * This class is the Title Scene.
  */
-class SplashScene extends Phaser.Scene {
+class TitleScene extends Phaser.Scene {
   /**
    * This method is the construtor.
    */
   constructor() {
-    super({ key: "splashScene" })
+    super({ key: "titleScene" })
 
-    this.splashSceneBackgroundImage = null
+    this.titleSceneBackgroundImage = null
   }
 
   /**
@@ -32,8 +32,9 @@ class SplashScene extends Phaser.Scene {
    * Use it to load assets.
    */
   preload() {
-    console.log("Splash Scene")
-    this.load.image("splashSceneBackground", "./assets/splashSceneImage.png")
+    console.log("Title Scene")
+    this.load.image("titleSceneBackground", "./assets/game_backdrop.png")
+    this.load.image("titleImage", "./assets/game_title.png")
   }
 
   /**
@@ -42,13 +43,15 @@ class SplashScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.splashSceneBackgroundImage = this.add.sprite(
+    this.titleSceneBackgroundImage = this.add.sprite(
       0,
       0,
-      "splashSceneBackground"
+      "titleSceneBackground"
     )
-    this.splashSceneBackgroundImage.x = 1080 / 2
-    this.splashSceneBackgroundImage.y = 1080 / 2
+    this.titleSceneBackgroundImage.x = 1080 / 2
+    this.titleSceneBackgroundImage.y = 1080 / 2
+
+    this.titleImage = this.add.sprite(540, 540, "titleImage").setScale(1.5)
   }
 
   /**
@@ -57,11 +60,12 @@ class SplashScene extends Phaser.Scene {
    *  @param {number} time - The current time.
    *  @param {number} delta - The delta time in ms since the last frame.
    */
+
   update(time, delta) {
-    if (time > 2500) {
-      this.scene.switch("titleScene")
+    if (time > 4000) {
+      this.scene.switch("controlsScene")
     }
   }
 }
 
-export default SplashScene
+export default TitleScene
