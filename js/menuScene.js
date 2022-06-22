@@ -52,11 +52,7 @@ class MenuScene extends Phaser.Scene {
   create(data) {
     var highScore = localStorage.getItem(this.highScore)
 
-    this.menuSceneBackgroundImage = this.add.sprite(
-      0,
-      0,
-      "menuSceneBackground"
-    )
+    this.menuSceneBackgroundImage = this.add.sprite(0, 0, "menuSceneBackground")
     this.menuSceneBackgroundImage.x = 1080 / 2
     this.menuSceneBackgroundImage.y = 1080 / 2
 

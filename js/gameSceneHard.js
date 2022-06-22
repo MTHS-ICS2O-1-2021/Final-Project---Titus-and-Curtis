@@ -370,7 +370,11 @@ class GameSceneHard extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.gameSceneHardBackgroundImage = this.add.sprite(0, 0, "gameSceneHardBackground")
+    this.gameSceneHardBackgroundImage = this.add.sprite(
+      0,
+      0,
+      "gameSceneHardBackground"
+    )
     this.game.sound.stopAll()
     this.sound.play("hardMode")
     this.gameSceneHardBackgroundImage.x = 1080 / 2
