@@ -6,7 +6,7 @@
 /**
  * This class is the Splash Scene.
  */
-class GameSceneNormal extends Phaser.Scene {
+ class GameSceneNormal extends Phaser.Scene {
   // create an NormalCar
 
   // cars that spawn on the top lane
