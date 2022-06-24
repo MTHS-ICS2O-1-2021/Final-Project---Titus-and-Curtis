@@ -7,12 +7,12 @@
 /**
  * This class is the Title Scene.
  */
- class TitleScene extends Phaser.Scene {
+class TitleScene extends Phaser.Scene {
   /**
    * This method is the construtor.
    */
   constructor() {
-    super({ key: 'titleScene' })
+    super({ key: "titleScene" })
 
     this.titleSceneBackgroundImage = null
   }
@@ -24,7 +24,7 @@
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-      this.cameras.main.setBackgroundColor('#ffffff')
+    this.cameras.main.setBackgroundColor("#ffffff")
   }
 
   /**
@@ -32,9 +32,9 @@
    * Use it to load assets.
    */
   preload() {
-    console.log('Title Scene')
-    this.load.image('titleSceneBackground', './assets/game_backdrop.png')
-    this.load.image('titleImage', './assets/game_title.png')
+    console.log("Title Scene")
+    this.load.image("titleSceneBackground", "./assets/game_backdrop.png")
+    this.load.image("titleImage", "./assets/game_title.png")
   }
 
   /**
@@ -46,12 +46,12 @@
     this.titleSceneBackgroundImage = this.add.sprite(
       0,
       0,
-      'titleSceneBackground'
+      "titleSceneBackground"
     )
     this.titleSceneBackgroundImage.x = 1080 / 2
     this.titleSceneBackgroundImage.y = 1080 / 2
 
-    this.titleImage = this.add.sprite(540, 540, 'titleImage').setScale(1.5)
+    this.titleImage = this.add.sprite(540, 540, "titleImage").setScale(1.5)
   }
 
   /**
@@ -63,9 +63,9 @@
 
   update(time, delta) {
     if (time > 4000) {
-    this.scene.switch('controlsScene')
+      this.scene.switch("controlsScene")
     }
   }
- }
+}
 
 export default TitleScene
