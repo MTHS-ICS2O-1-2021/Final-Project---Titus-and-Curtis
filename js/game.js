@@ -9,6 +9,7 @@ import MenuScene from "./menuScene.js"
 import GameSceneNormal from "./gameSceneNormal.js"
 import GameSceneHard from "./gameSceneHard.js"
 import SplashScene from "./splashScene.js"
+import TitleScene from "./titleScene.js"
 
 // Our game scenes
 const controlsScene = new ControlsScene()
@@ -16,6 +17,7 @@ const menuScene = new MenuScene()
 const gameSceneNormal = new GameSceneNormal()
 const gameSceneHard = new GameSceneHard()
 const splashScene = new SplashScene()
+const titleScene = new TitleScene()
 
 /** Game scene.*/
 const config = {
@@ -25,7 +27,7 @@ const config = {
   physics: {
     default: "arcade",
     arcade: {
-      debug: true,
+      debug: false,
     },
   },
   // set background color
@@ -47,6 +49,7 @@ game.scene.add("menuScene", menuScene)
 game.scene.add("gameSceneNormal", gameSceneNormal)
 game.scene.add("gameSceneHard", gameSceneHard)
 game.scene.add("splashScene", splashScene)
+game.scene.add("titleScene", titleScene)
 
 // the start scene
-game.scene.start("splashScene")
+game.scene.start("titleScene")

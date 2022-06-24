@@ -13,70 +13,80 @@ class GameSceneHard extends Phaser.Scene {
    * This class is the GameSceneHard.
    */
   createHardCar() {
-    var carHardSpeed = Math.floor(Math.random() * 200) + 400
+    var carHardSpeed = Math.floor(Math.random() * 300) + 300
     var carPosition = Math.floor(Math.random() * 20) + 1
     var carType = Math.floor(Math.random() * 15) + 1
 
     if (carType > 1) {
       // cars that spawn on the top lane
       if (carPosition == 1) {
-        const anHardCar = this.physics.add.sprite(164, -30, "hardCar")
-
+        const anHardCar = this.physics.add
+          .sprite(164, -30, "hardCar")
+          .setScale(0.8)
         anHardCar.body.velocity.y = carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 2) {
-        const anHardCar = this.physics.add.sprite(352, -30, "hardCar")
-
+        const anHardCar = this.physics.add
+          .sprite(352, -30, "hardCar")
+          .setScale(0.8)
         anHardCar.body.velocity.y = carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 3) {
-        const anHardCar = this.physics.add.sprite(540, -30, "hardCar")
-
+        const anHardCar = this.physics.add
+          .sprite(540, -30, "hardCar")
+          .setScale(0.8)
         anHardCar.body.velocity.y = carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 4) {
-        const anHardCar = this.physics.add.sprite(728, -30, "hardCar")
-
+        const anHardCar = this.physics.add
+          .sprite(728, -30, "hardCar")
+          .setScale(0.8)
         anHardCar.body.velocity.y = carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 5) {
-        const anHardCar = this.physics.add.sprite(916, -30, "hardCar")
-
+        const anHardCar = this.physics.add
+          .sprite(916, -30, "hardCar")
+          .setScale(0.8)
         anHardCar.body.velocity.y = carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       // cars that spawn on the right lane
       if (carPosition == 6) {
-        const anHardCar = this.physics.add.sprite(1110, 164, "hardCarSide")
-
+        const anHardCar = this.physics.add
+          .sprite(1110, 164, "hardCarSide")
+          .setScale(0.8)
         anHardCar.body.velocity.x = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 7) {
-        const anHardCar = this.physics.add.sprite(1110, 352, "hardCarSide")
-
+        const anHardCar = this.physics.add
+          .sprite(1110, 352, "hardCarSide")
+          .setScale(0.8)
         anHardCar.body.velocity.x = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 8) {
-        const anHardCar = this.physics.add.sprite(1110, 540, "hardCarSide")
-
+        const anHardCar = this.physics.add
+          .sprite(1110, 540, "hardCarSide")
+          .setScale(0.8)
         anHardCar.body.velocity.x = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 9) {
-        const anHardCar = this.physics.add.sprite(1110, 728, "hardCarSide")
-
+        const anHardCar = this.physics.add
+          .sprite(1110, 728, "hardCarSide")
+          .setScale(0.8)
         anHardCar.body.velocity.x = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
       if (carPosition == 10) {
-        const anHardCar = this.physics.add.sprite(1110, 916, "hardCarSide")
-
+        const anHardCar = this.physics.add
+          .sprite(1110, 916, "hardCarSide")
+          .setScale(0.8)
         anHardCar.body.velocity.x = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
       }
@@ -84,6 +94,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 11) {
         const anHardCar = this.physics.add
           .sprite(916, 1110, "hardCar")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.y = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -91,6 +102,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 12) {
         const anHardCar = this.physics.add
           .sprite(728, 1110, "hardCar")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.y = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -98,6 +110,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 13) {
         const anHardCar = this.physics.add
           .sprite(540, 1110, "hardCar")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.y = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -105,6 +118,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 14) {
         const anHardCar = this.physics.add
           .sprite(352, 1110, "hardCar")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.y = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -112,6 +126,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 15) {
         const anHardCar = this.physics.add
           .sprite(164, 1110, "hardCar")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.y = -carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -120,6 +135,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 16) {
         const anHardCar = this.physics.add
           .sprite(-30, 916, "hardCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.x = carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -127,6 +143,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 17) {
         const anHardCar = this.physics.add
           .sprite(-30, 728, "hardCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.x = carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -134,6 +151,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 18) {
         const anHardCar = this.physics.add
           .sprite(-30, 540, "hardCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.x = carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -141,6 +159,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 19) {
         const anHardCar = this.physics.add
           .sprite(-30, 352, "hardCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.x = carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -148,6 +167,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 20) {
         const anHardCar = this.physics.add
           .sprite(-30, 164, "hardCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anHardCar.body.velocity.x = carHardSpeed
         this.hardCarGroup.add(anHardCar)
@@ -155,63 +175,73 @@ class GameSceneHard extends Phaser.Scene {
     } else {
       // cars that spawn on the top lane
       if (carPosition == 1) {
-        const anGoldCar = this.physics.add.sprite(164, -30, "goldCar")
-
+        const anGoldCar = this.physics.add
+          .sprite(164, -30, "goldCar")
+          .setScale(0.8)
         anGoldCar.body.velocity.y = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 2) {
-        const anGoldCar = this.physics.add.sprite(352, -30, "goldCar")
-
+        const anGoldCar = this.physics.add
+          .sprite(352, -30, "goldCar")
+          .setScale(0.8)
         anGoldCar.body.velocity.y = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 3) {
-        const anGoldCar = this.physics.add.sprite(540, -30, "goldCar")
-
+        const anGoldCar = this.physics.add
+          .sprite(540, -30, "goldCar")
+          .setScale(0.8)
         anGoldCar.body.velocity.y = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 4) {
-        const anGoldCar = this.physics.add.sprite(728, -30, "goldCar")
-
+        const anGoldCar = this.physics.add
+          .sprite(728, -30, "goldCar")
+          .setScale(0.8)
         anGoldCar.body.velocity.y = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 5) {
-        const anGoldCar = this.physics.add.sprite(916, -30, "goldCar")
-
+        const anGoldCar = this.physics.add
+          .sprite(916, -30, "goldCar")
+          .setScale(0.8)
         anGoldCar.body.velocity.y = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       // cars that spawn on the right lane
       if (carPosition == 6) {
-        const anGoldCar = this.physics.add.sprite(1110, 164, "goldCarSide")
-
+        const anGoldCar = this.physics.add
+          .sprite(1110, 164, "goldCarSide")
+          .setScale(0.8)
         anGoldCar.body.velocity.x = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 7) {
-        const anGoldCar = this.physics.add.sprite(1110, 352, "goldCarSide")
-
+        const anGoldCar = this.physics.add
+          .sprite(1110, 352, "goldCarSide")
+          .setScale(0.8)
         anGoldCar.body.velocity.x = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 8) {
-        const anGoldCar = this.physics.add.sprite(1110, 540, "goldCarSide")
-
+        const anGoldCar = this.physics.add
+          .sprite(1110, 540, "goldCarSide")
+          .setScale(0.8)
         anGoldCar.body.velocity.x = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 9) {
-        const anGoldCar = this.physics.add.sprite(1110, 728, "goldCarSide")
-
+        const anGoldCar = this.physics.add
+          .sprite(1110, 728, "goldCarSide")
+          .setScale(0.8)
         anGoldCar.body.velocity.x = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 10) {
-        const anGoldCar = this.physics.add.sprite(1110, 916, "goldCarSide")
-
+        const anGoldCar = this.physics.add
+          .sprite(1110, 916, "goldCarSide")
+          .setScale(0.8)
         anGoldCar.body.velocity.x = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
@@ -219,6 +249,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 11) {
         const anGoldCar = this.physics.add
           .sprite(916, 1110, "goldCar")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -226,14 +257,15 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 12) {
         const anGoldCar = this.physics.add
           .sprite(728, 1110, "goldCar")
-
-          .setAgle(180)
+          .setScale(0.8)
+          .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 13) {
         const anGoldCar = this.physics.add
           .sprite(540, 1110, "goldCar")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -241,6 +273,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 14) {
         const anGoldCar = this.physics.add
           .sprite(352, 1110, "goldCar")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -248,6 +281,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 15) {
         const anGoldCar = this.physics.add
           .sprite(164, 1110, "goldCar")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.y = -carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -256,6 +290,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 16) {
         const anGoldCar = this.physics.add
           .sprite(-30, 916, "goldCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -263,6 +298,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 17) {
         const anGoldCar = this.physics.add
           .sprite(-30, 728, "goldCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -270,6 +306,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 18) {
         const anGoldCar = this.physics.add
           .sprite(-30, 540, "goldCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -277,6 +314,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 19) {
         const anGoldCar = this.physics.add
           .sprite(-30, 352, "goldCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -284,6 +322,7 @@ class GameSceneHard extends Phaser.Scene {
       if (carPosition == 20) {
         const anGoldCar = this.physics.add
           .sprite(-30, 164, "goldCarSide")
+          .setScale(0.8)
           .setAngle(180)
         anGoldCar.body.velocity.x = carHardSpeed
         this.goldCarGroup.add(anGoldCar)
@@ -304,14 +343,14 @@ class GameSceneHard extends Phaser.Scene {
     this.score = 0
     this.scoreText = null
     this.scoreTextStyle = {
-      font: "50px Arial",
+      font: "65px Arial",
       fill: "#ffffff",
       align: "center",
     }
     this.highScoreHard = 0
     this.highScoreHardText = null
     this.highScoreHardTextStyle = {
-      font: "50px Arial",
+      font: "65px Arial",
       fill: "#fffc4d",
       align: "center",
     }
@@ -365,7 +404,6 @@ class GameSceneHard extends Phaser.Scene {
       0,
       "gameSceneHardBackground"
     )
-    this.game.sound.stopAll()
     this.gameSceneHardBackgroundImage.x = 1080 / 2
     this.gameSceneHardBackgroundImage.y = 1080 / 2
 
@@ -453,6 +491,7 @@ class GameSceneHard extends Phaser.Scene {
         goldCarCollide.destroy()
         this.sound.play("goldCarCrash")
         this.createHardCar()
+        this.sound.play("carDrive")
         this.score = this.score + 25
         this.scoreText.setText(this.score.toString())
       }.bind(this)

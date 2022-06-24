@@ -54,7 +54,6 @@ class MenuScene extends Phaser.Scene {
       540 / 2 + 100,
       "startButtonNormal"
     )
-    this.startButtonNormal.setInteractive({ useHandCursor: true })
     this.startButtonNormal.on("pointerdown", () => this.clickButtonNoraml())
 
     this.startButtonHard = this.add.sprite(
@@ -63,8 +62,6 @@ class MenuScene extends Phaser.Scene {
       "startButtonHard"
     )
     this.startButtonHard.setInteractive({ useHandCursor: true })
-    this.startButtonHard.on("pointerdown", () => this.clickButtonHard())
-  }
 }
 
 export default MenuScene
