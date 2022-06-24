@@ -273,7 +273,7 @@ class GameSceneHard extends Phaser.Scene {
 
           .setAngle(180)
         (anGoldCar.body.velocity.x = carHardSpeed),
-          this.goldCarGroup.add(anGoldCar)
+        this.goldCarGroup.add(anGoldCar)
       }
       if (carPosition == 17) {
         const anGoldCar = this.physics.add
