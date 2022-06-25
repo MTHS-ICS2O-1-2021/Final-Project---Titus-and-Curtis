@@ -87,6 +87,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 11) {
         const anNormalCar = this.physics.add
           .sprite(916, 1110, "normalCar")
+
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -94,6 +95,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 12) {
         const anNormalCar = this.physics.add
           .sprite(728, 1110, "normalCar")
+
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -101,6 +103,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 13) {
         const anNormalCar = this.physics.add
           .sprite(540, 1110, "normalCar")
+
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -108,6 +111,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 14) {
         const anNormalCar = this.physics.add
           .sprite(352, 1110, "normalCar")
+
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -115,6 +119,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 15) {
         const anNormalCar = this.physics.add
           .sprite(164, 1110, "normalCar")
+
           .setAngle(180)
         anNormalCar.body.velocity.y = -carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -123,6 +128,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 16) {
         const anNormalCar = this.physics.add
           .sprite(-30, 916, "normalCarSide")
+
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -130,6 +136,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 17) {
         const anNormalCar = this.physics.add
           .sprite(-30, 728, "normalCarSide")
+
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -137,6 +144,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 18) {
         const anNormalCar = this.physics.add
           .sprite(-30, 540, "normalCarSide")
+
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -144,6 +152,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 19) {
         const anNormalCar = this.physics.add
           .sprite(-30, 352, "normalCarSide")
+
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -151,6 +160,7 @@ class GameSceneNormal extends Phaser.Scene {
       if (carPosition == 20) {
         const anNormalCar = this.physics.add
           .sprite(-30, 164, "normalCarSide")
+
           .setAngle(180)
         anNormalCar.body.velocity.x = carNormalSpeed
         this.normalCarGroup.add(anNormalCar)
@@ -354,12 +364,13 @@ class GameSceneNormal extends Phaser.Scene {
     this.load.image("goldCarSide", "./assets/gold_car_side.png")
     this.load.image("borderVertical", "./assets/border_vertical.png")
     this.load.image("borderHorizontal", "./assets/border_horizontal.png")
-    this.load.image("okbutton", "./assets/ok_button.png")
+    this.load.image("gameOverButton", "./assets/gameOver_button.png")
     this.load.image("destroyBorder", "./assets/destroy_border.png")
     // sounds
     this.load.audio("carDrive", "./assets/carDrive.wav")
     this.load.audio("monkeyDeath", "./assets/monkeyDeath.wav")
     this.load.audio("goldCarCrash", "./assets/goldCarCrashNormal.wav")
+    this.load.audio("normalMode", "./assets/normalMode.wav")
   }
 
   /**
@@ -374,6 +385,7 @@ class GameSceneNormal extends Phaser.Scene {
       "gameSceneNormalBackground"
     )
     this.game.sound.stopAll()
+    this.sound.play("normalMode")
     this.gameSceneNormalBackgroundImage.x = 1080 / 2
     this.gameSceneNormalBackgroundImage.y = 1080 / 2
 
@@ -427,9 +439,15 @@ class GameSceneNormal extends Phaser.Scene {
       function (monkeyNormalCollide, normalCarCollide) {
         monkeyNormalCollide.destroy()
         this.sound.play("monkeyDeath")
-        this.okButton = this.add.sprite(1080 / 2, 1620 / 2 + 100, "okbutton")
+        this.okButton = this.add.sprite(540, 540, "gameOverButton")
         this.okButton.setInteractive({ useHandCursor: true })
         this.okButton.on("pointerdown", () => this.clickButton())
+        this.okButton.on("pointerover", function () {
+          this.setTint(0xccffce)
+        })
+        this.okButton.on("pointerout", function () {
+          this.clearTint()
+        })
         this.physics.add.collider(
           this.normalCarGroup,
           this.destroyBorder,
